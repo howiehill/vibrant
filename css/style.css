@@ -1,49 +1,68 @@
-
+/* *[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -300px;
+  height: 300px;
+  visibility: hidden;
+}*/
 
 address {
-  colour: rgba(255,0,128,.85);
+  colour: rgba(255, 0, 128, .85);
 }
 
 body {
-  background-color: 0;
-  border: 0px;
+  background-image: linear-gradient(rgba(253, 249, 246, 0.85),rgba(253, 249, 246, 0.85)), url(../images/GlassChandelierBG.png);
+  background-size: cover;
+  background-position: 0px 40px;
+  /*background-color: rgb(253, 249, 246);*/
+  border: 0px solid black;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 div {
- background-color: 0;
- overflow: hidden;
- }
+  background-color: 0;
+  overflow: hidden;
+}
 
 h1 {
   color: white;
   font-family: 'Libre Baskerville', serif;
-  font-size: 16pt;
+  font-size: 2rem;
   font-weight: 200;
   padding-bottom: 1px;
   text-shadow: 0px 0px 7px #858585;
   transform: translateX(0px);
   transform: translateY(0px);
   margin-bottom: auto;
-  }
+}
 
 h1.creativeCutandColor {
-  background-color: rgba(255, 0, 128, 0.75);
+  background-image: linear-gradient(rgba(255, 0, 128, 0.5),rgba(255, 0, 128, 0.5)), url(../images/GlassChandelierBG.png);
+  /*background-repeat: no-repeat;*/
+  background-size: 100%;
+  background-position: 0px -50px;
   margin-top: 0;
   font-size: 1.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 7%;
-  /*text-shadow: 0px 0px 4px rgba(0,0,0,0.6);*/
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: White;
+  text-align: center;
 }
 
 h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.7rem;
+  margin: 0px;
+  text-align: center;
+  }
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
   font-size: 1.1rem;
   margin: 0px;
-  }
+}
 
 p {
   padding-top: 0;
@@ -51,17 +70,18 @@ p {
 
 p.gridPhone {
   text-align: center;
+  margin-top: 0px;
 }
 
 hr {
   border-style: none;
-  border-top: 1.5px solid rgba(255,0,128,0.855);
+  border-top: 1.5px solid rgba(255, 0, 128, 0.855);
   height: .5px;
   width: 65%;
   padding-bottom: 5px;
   padding-top: 5px;
   align: center;
-  }
+}
 
 form {
   display: inline-block;
@@ -69,21 +89,22 @@ form {
   text-align: center;
   /* width: 1fr; */
   height: 25px;
-  padding; 0;
-  }
+  padding;
+  0;
+}
 
 form input {
   width: 85%;
-/*  margin-right: 5px; */
+  /*  margin-right: 5px; */
   padding-left: 5px;
   padding-right: 5px;
   border: 1px solid rgb(255, 0, 128);
-  }
+}
 
 button {
   border: 1px solid rgb(255, 0, 128);
   border-radius: 3px;
-  background-color: rgba(255,0,128,0.75);
+  background-color: rgba(255, 0, 128, 0.75);
   color: white;
   height: 27px;
   width: 150px;
@@ -93,9 +114,11 @@ button {
 
 button:hover {
   background-color: white;
-  border-color: rgba(255,0,128,0.75);
-  color: rgba(255,0,128,0.75);
-  -webkit-transition-duration: 0.2s; /* Safari */
+  border-color: rgba(255, 0, 128, 0.75);
+  color: rgba(255, 0, 128, 0.75);
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
   transition-duration: 0.2s;
   text-decoration: none;
 }
@@ -107,7 +130,7 @@ input {
 }
 
 section {
-  background-color: rgb(253,249,246);
+  /*background-color: rgb(253, 249, 246);*/
 }
 
 header {
@@ -116,31 +139,31 @@ header {
   background-image: url(../images/GlassChandelierBG.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  border-bottom: 1px solid rgb(255,0,128);
+  border-bottom: 1px solid rgb(255, 0, 128);
   height: 50px;
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 8px;
   padding-bottom: 8px;
-  }
+}
 
 .headerIcons {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  }
+}
 
 .facebookIconHeader {
   margin-left: auto;
   padding-top: 2px;
   text-shadow: 0px 0px 5px white;
-  text-shadow: 0px 0px 3px rgba(255,0,128,0.5);
+  text-shadow: 0px 0px 3px rgba(255, 0, 128, 0.5);
 }
 
 .instaIconHeader {
   padding-top: 2px;
-  text-shadow: 0px 0px 3px rgba(255,255,255,1);
-  }
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+}
 
 .vibrantHome {
   align-self: center;
@@ -150,56 +173,134 @@ header {
 .home {
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
-  text-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   padding: 10px 5px;
 }
 
 .home:hover {
-  text-shadow: 0px 0px 5px rgba(0,0,0,0);
-}
-
-.galleryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  }
-
-.gallery {
-  height: 245px;
-  background-color: rgb(255,0,128);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
 }
 
 .wrapper {
-  max-width: 992px;
+  /*max-width: 1200px;*/
   margin: 0 auto;
-  border: 1px solid rgba(255,0,128,0.5);
+  border: 1px solid rgba(255, 0, 128, 0.5);
 }
 
 .grid-container {
   display: flex;
-  flex-direction: row;  /* Update this */
+  flex-direction: row;
+  /* Update this */
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgb(253,249,246);
-  margin: 0 auto;
-  max-width: 992px;
-}
-
-.footer-grid {
-  display: flex;
-  flex-wrap: wrap;
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+  margin: 65px auto auto auto;
+  max-width: 1200px;
+  padding-top: 15px;
 }
 
 .grid-item {
   width: 330px;
-  height: 330px;
+  /*height: 330px;*/
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
 .grid-item.contact {
   order: 1;
   text-align: center;
+  line-height: 1;
+}
+
+.grid-item.about a {
+  color: rgb(255, 0, 128);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.welcome-grid-container {
+  align-items: flex-start;
+  /*background-color: rgb(253, 249, 246);*/
+  /*border: 1px solid black;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 500px;
+  margin: 85px auto 65px auto;
+  max-width: 1200px;
+}
+
+.welcome-grid-item {
+  font-size: 1.3rem;
+  border: 0px solid rgba(255, 0, 128, .5);
+  /*padding: 0px 60px 0 60px;*/
+  text-align: left;
+  width: 330px;
+}
+
+.welcome-grid-item.copy {
+  font-weight: 300;
+  line-height: 1.3;
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 575px;
+  border: 1px solid rgba(255, 0, 128, 0.5);
+  padding: 30px 60px 0 60px;
+}
+
+.welcome-grid-item.photo {
+  width: 435px;
+  border-left: 1px solid rgba(255, 0, 128, 0.5);
+  border-top: 1px solid rgba(255, 0, 128, 0.5);
+  border-bottom: 1px solid rgba(255, 0, 128, 0.5);
+}
+
+.welcome-grid-item.photo img {
+  float: right;
+}
+
+.welcomeCopyGrid {
+  background-color: yellow;
+  border: 1px solid rgba(255, 0, 128, 0.5);
+}
+
+.welcomeCopyHeaderImg {
+background-color: blue;
+border: 1px solid rgba(255, 0, 128, 0.5);
+object-fit: none;
+/*width: 675px;*/
+height: 50px;
+}
+
+.footerSection {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.ManUpLogo {
+  padding-top: 12px;
+}
+
+.spoilYourself {
+  color: rgba(255, 0, 128, 0.85);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 300;
+  padding: 45px 0;
+  padding-bottom: 45px;
+  text-align: center;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.scissorsIcon {
+  padding-top: 25px;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 * .weekday {
@@ -223,13 +324,20 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 0px;
-  }
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.galleryPhoto {
+    border: 1px solid rgba(255, 0, 128, 0.5)
+}
 
 .landingBody {
   background-image: url(../images/GlassChandelierBG.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0px -50px;
+  height: 500px;
   padding-top: 85px;
   padding-bottom: 80px;
   text-align: center;
@@ -239,10 +347,9 @@ header {
 /*.landingBody img {
   transform: translateX(25px);
 }*/
-
 .addressBanner {
   color: white;
-  background-color: rgba(255,0,128,0.8);
+  background-color: rgba(255, 0, 128, 0.8);
   font-size: 1.3rem;
   font-weight: 500;
   font-style: italic;
@@ -255,16 +362,30 @@ header {
 :link {
   color: #FFF;
   text-decoration: none;
-  }
+}
 
 a:visited {
-    color: #FFF;
-    text-decoration: none;
-    }
+  color: #fff;
+  text-decoration: none;
+}
 
 a:hover {
-  color: rgba(255,0,128,.85);
+  color: rgba(255, 0, 128, .85);
 }
+
+.manup:hover,
+.manup:active,
+.manup:visited {
+  color: black;
+  text-decoration: none;
+}
+/*
+.spoilYourself:active,
+.spoilYourself:visited,
+.spoilYourself:hover {
+  color: rgba(255, 0, 128, .85) !important;
+  text-decoration: none;
+}*/
 
 .item {
   width: 300px;
@@ -272,14 +393,13 @@ a:hover {
 
 .item1, .item2, .item3 {
   padding: 0px;
-  }
+}
 
 .item8, .item7, .item9 {
   max-height: 250px;
   padding-top: 0;
   padding-bottom: 10px;
   font-size: .95rem;
-  font-weight: 200;
   color: #404040;
 }
 
@@ -297,7 +417,6 @@ a:hover {
   text-align: left;
   padding-left: 10%;
   padding-right: 15%;
-  font-size: .9rem;
   width: 275px;
 }
 
@@ -306,7 +425,16 @@ a:hover {
   margin: 0 10px;
 }
 
-
+.welcomeButton {
+  border: 1px solid rgb(255, 0, 128);
+  border-radius: 3px;
+  background-color: rgba(255, 0, 128, 0.75);
+  color: white;
+  height: 35px;
+  width: 175px;
+  text-align: center;
+  font-size: .85rem;
+}
 
 .copyright {
   background-image: url(../images/GlassChandelierBG.png);
@@ -314,34 +442,53 @@ a:hover {
   background-size: 100%;
   border-top: solid 1px;
   color: white;
-  text-shadow: 0px 0px 3px rgba(0,0,0,0.75);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.75);
   font-size: .7em;
   height: 30px;
   padding: 14px 4% 8px 4%
-  /*padding-top: 14px;
+    /*padding-top: 14px;
   padding-bottom: 8px;
   padding-left: 4%;
   padding-right: 4%;*/
-      /*  height: 20px;
+    /*  height: 20px;
   padding: 20px;
   /* display: inline-block; */
 }
 
 @media only screen and (max-width: 992px) {
-.landingBody {
+  .landingBody {
     background-size: 992px;
     padding-top: 20px;
-    }
+  }
 
-.landingBody img {
+  header {
+    background-size: 992px;
+  }
+
+  h1.creativeCutandColor {
+    background-size: 992px;
+  }
+
+  .landingBody img {
     max-width: 65%;
     min-width: 225px;
   }
 
+  .ManUpLogo {
+    padding-bottom: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .welcome-grid-item.photo {
+      border-right: 1px solid rgba(255, 0, 128, 0.5);
+      border-bottom: 0px solid rgba(255, 0, 128, 0.5);
+    }
 }
 
 @media only screen and (max-width: 414px) {
-.grid-item {
+  .grid-item {
     padding-bottom: 10px;
-}
   }
+}
