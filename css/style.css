@@ -1,10 +1,4 @@
-/* *[id]:before {
-  display: block;
-  content: " ";
-  margin-top: -300px;
-  height: 300px;
-  visibility: hidden;
-}*/
+
 
 address {
   colour: rgba(255, 0, 128, .85);
@@ -14,7 +8,6 @@ body {
   background-image: linear-gradient(rgba(253, 249, 246, 0.85),rgba(253, 249, 246, 0.85)), url(../images/GlassChandelierBG.png);
   background-size: cover;
   background-position: 0px 40px;
-  /*background-color: rgb(253, 249, 246);*/
   border: 0px solid black;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -147,14 +140,78 @@ header {
   padding-bottom: 8px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  margin: auto auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  transform: translateX(-25px);
+}
+
+.navItem {
+  color: rgba(255, 0, 128, 0.855);
+  margin: 0 auto;
+  padding: 0 85px;
+  width: 50px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: .5rem;
+  font-weight: bold;
+  margin: 0px;
+  text-align: center;
+}
+
+.navItem a:link,
+.navItem a:hover,
+.navItem a:active,
+.navItem a:visited {
+  color: rgba(255, 0, 128, 0.85);
+  text-decoration: none;
+}
+
+.galleryTextBox {
+  background-image: url(../images/gallery/300x300BG.jpg);
+  text-align: center;
+}
+
+.galleryText {
+  padding-top: 40%;
+  padding-bottom: 75px;
+}
+
+.galleryTextBox hr {
+  border-style: none;
+  border-top: 1.65px solid rgba(255, 0, 128, 0.855);
+  height: .5px;
+  width: 50%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  align: center;
+}
+
+.galleryTextBox h2 {
+    color: white;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17pt;
+    margin: 0px;
+    text-align: center;
+  }
+
+
 .headerIcons {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .facebookIconHeader {
-  margin-left: auto;
+  overflow: visible;
   padding-top: 2px;
   text-shadow: 0px 0px 5px white;
   text-shadow: 0px 0px 3px rgba(255, 0, 128, 0.5);
@@ -163,11 +220,13 @@ header {
 .instaIconHeader {
   padding-top: 2px;
   text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+  overflow: visible;
 }
 
 .vibrantHome {
   align-self: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .home {
@@ -275,6 +334,10 @@ object-fit: none;
 height: 50px;
 }
 
+.contact-copy {
+  text-align: center;
+}
+
 .footerSection {
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -295,6 +358,7 @@ height: 50px;
   max-width: 75%;
   margin: 0 auto;
 }
+
 
 .scissorsIcon {
   padding-top: 25px;
@@ -374,20 +438,56 @@ a:visited {
 a:hover {
   color: rgba(255, 0, 128, .85);
 }
+.manup {
+  color: black;
+}
 
+.manup:link,
 .manup:hover,
 .manup:active,
 .manup:visited {
   color: black;
   text-decoration: none;
 }
-/*
-.spoilYourself:active,
-.spoilYourself:visited,
-.spoilYourself:hover {
-  color: rgba(255, 0, 128, .85) !important;
+
+.lloydAve:link,
+.lloydAve:hover,
+.lloydAve:active,
+.lloydAve:visited {
+  color: black;
   text-decoration: none;
-}*/
+}
+
+.spoilYourself a:link,
+.spoilYourself a:hover,
+.spoilYourself a:active,
+.spoilYourself a:visited {
+  color: rgba(255, 0, 128, 0.85);
+  text-decoration: none;
+}
+
+#contactButton {
+  margin-bottom: 50px;
+}
+
+.photo-grid {
+  /*border: 1px solid green;*/
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: row; /* Reverses the order of the html grid items display */
+  /* flex-direction: column; */ /* This changes the direction from row to column */
+  justify-content: center; /* Justify Items left to right */
+  align-items: center; /* Justify Items up and down */
+  margin: 50px auto;
+}
+
+.photo-grid-item {
+  border: 1px solid rgba(255, 0, 128, 0.85);
+  width: 300px;
+  height: 300px;
+  margin: 3px;
+}
 
 .item {
   width: 300px;
@@ -448,13 +548,6 @@ a:hover {
   font-size: .7em;
   height: 30px;
   padding: 14px 4% 8px 4%
-    /*padding-top: 14px;
-  padding-bottom: 8px;
-  padding-left: 4%;
-  padding-right: 4%;*/
-    /*  height: 20px;
-  padding: 20px;
-  /* display: inline-block; */
 }
 
 @media only screen and (max-width: 992px) {
@@ -492,5 +585,31 @@ a:hover {
 @media only screen and (max-width: 414px) {
   .grid-item {
     padding-bottom: 10px;
+}
+
+  header {
+      height: auto;
   }
+
+
+  @media only screen and (max-width: 956px) {
+    .navItem {
+      padding: 0 30px;
+
+  }
+
+
+@media only screen and (max-width: 552px) {
+  .vibrantHome {
+    display: none;
+    }
+
+  .facebookIconHeader {
+    display: none;
+    }
+
+  .instaIconHeader {
+    display: none;
+  }
+
 }
